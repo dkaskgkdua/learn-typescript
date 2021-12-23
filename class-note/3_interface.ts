@@ -55,8 +55,12 @@ interface Person {
     age: number;
 }
 
-interface Developer {
-    name: string;
-    age: number;
+interface Developer extends Person{
     language: string;
+}
+
+const song: Developer = {
+    name : '민준',
+    age : 15,
+    language : '하이'
 }
